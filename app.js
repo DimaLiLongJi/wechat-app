@@ -1,6 +1,6 @@
 //app.js 仅仅可以在app.js中注册，其他的要通过const app = getApp()获取
 App({
-  testTest: '123', // 如果需要则要在别的里面 通过getApp().testTest
+  // testTest: '123', // 如果需要则要在别的里面 通过getApp().testTest
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -35,6 +35,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    testTest: '123',
   }
 })

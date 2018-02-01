@@ -1,0 +1,14 @@
+<view class="container local-weather">
+  <view class="now">
+    <view class="local">
+      <image class="location-img" mode="aspectFit" src="../../images/icons/location.png"></image>
+      <text class="location">{{city}} {{district}}</text>
+    </view>
+    <view class="now-weather">
+      <text class="now-weather-tmp">{{now.tmp}}°</text>
+      <text class="now-weather-txt">{{now.cond_txt}}</text>
+      <text class="now-weather-txt">{{now.wind_dir}} {{now.wind_spd}}级</text>
+      <text class="now-weather-txt">湿度 {{now.hum}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+.local-weather {
+  background-color: #f7f7f7;
+  height: 100vh;
+  padding: 0;
+}
+
+.now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+.local {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.location-img {
+  width: 25rpx;
+  height: 25rpx;
+}
+.location {
+  color: red;
+  font-size: 30rpx;
+}
+.now-weather {
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.now-weather-tmp {
+  font-size: 120rpx;
+}
+.now-weather-txt {
+  font-size: 30rpx;
+}
