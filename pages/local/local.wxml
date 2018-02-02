@@ -1,4 +1,4 @@
-<view class="container local-weather">
+<view class="local-weather">
   <view class="now">
     <view class="local">
       <image class="location-img" mode="aspectFit" src="../../images/icons/location.png"></image>
@@ -9,6 +9,29 @@
       <text class="now-weather-txt">{{now.cond_txt}}</text>
       <text class="now-weather-txt">{{now.wind_dir}} {{now.wind_spd}}级</text>
       <text class="now-weather-txt">湿度 {{now.hum}}</text>
+      <text class="from">数据来源：和风天气</text>
+    </view>
+  </view>
+  <view class="today-tommorow">
+    <view class="today">
+      <view class="today-tommorow-colomn">
+        <text class="today-tommorow-text">今天</text>
+        <text class="today-tommorow-tem">{{forecast[0].tmp_max}}/{{forecast[0].tmp_min}}°</text>
+      </view>
+      <view class="today-tommorow-colomn">
+        <text class="today-tommorow-text">{{forecast[0].cond_txt_d}}</text>
+        <!-- <text></text> -->
+      </view>
+    </view>
+    <view class="tommorow">
+      <view class="today-tommorow-colomn">
+        <text class="today-tommorow-text">明天</text>
+        <text class="today-tommorow-tem">{{forecast[1].tmp_max}}/{{forecast[1].tmp_min}}°</text>
+      </view>
+      <view class="today-tommorow-colomn">
+        <text class="today-tommorow-text">{{forecast[0].cond_txt_d}}</text>
+        <!-- <text></text> -->
+      </view>
     </view>
   </view>
 </view>

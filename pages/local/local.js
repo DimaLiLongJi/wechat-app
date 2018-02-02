@@ -27,7 +27,7 @@ Page({
   },
 
   bindGetWeather: function() {
-    const that = this;
+    let that = this;
     let latitude, longitude, city, district, now, forecast;
     wx.getLocation({
       type: 'wgs84',
@@ -42,7 +42,6 @@ Page({
             longitude: longitude,
           },
           success: function(res) {
-            console.log('res.result', res.result);
             city = res.result.address_component.city;
             district = res.result.address_component.district;
             that.setData({
@@ -70,6 +69,7 @@ Page({
                 that.setData({
                   forecast: forecast,
                 });
+                console.log('forecast', that.data.forecast);
               },
             });
           }

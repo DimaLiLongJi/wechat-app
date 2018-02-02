@@ -38,3 +38,26 @@
 .now-weather-txt {
   font-size: 30rpx;
 }
+.from {
+  font-size: 20rpx;
+}
+
+.today-tommorow {
+  margin-top: 20rpx;
+}
+.today {
+  width: 49%;
+  display: inline-block;
+  border-right: 1px solid black;
+}
+.tommorow {
+  /* box-sizing: content-box; */
+  width: 50%;
+  display: inline-block;
+}
+.today-tommorow-colomn {
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
